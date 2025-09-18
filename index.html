@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="CSS/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Shaher AL-Yaari</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Full-Stack Web & Mobile Developer</h1>
+          <p>
+            I build professional web and mobile applications that combine high
+            performance with modern design, using the latest technologies.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About <span class="highlight">Me</span></h2>
+          <p>Get to know more about my background and experience</p>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <div class="about-img-container">
+              <img
+                src="images/5-removebg3-preview.png"
+                alt="Profile Image"
+                class="profile-image"
+              />
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>IT Student & Aspiring Full-Stack Developer</h3>
+            <p>
+              I'm a passionate 24-year-old IT student in my final year at the
+              University of 21 September, set to graduate this year. My journey
+              in technology has led me to specialize in web development, where I
+              blend creativity with technical expertise.
+            </p>
+            <p>
+              I thrive on building dynamic web solutions using modern
+              technologies like ASP.NET Core, MVC, and Angular. Through various
+              academic and personal projects, I've developed a strong foundation
+              in full-stack development and a keen eye for creating intuitive
+              digital experiences.
+            </p>
+            <p>
+              As I approach graduation, I'm eager to bring my fresh perspective
+              and dedication to innovative companies, ready to contribute to
+              meaningful projects and continue growing as a professional
+              developer.
+            </p>
+            <div class="about-info">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Education</h4>
+                  <p>IT Student - Final Year</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Focus</h4>
+                  <p>Web Development</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-tasks"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Technologies</h4>
+                  <p>ASP.NET Core, MVC, Angular</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Goal</h4>
+                  <p>Join Innovative Companies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>My <span class="highlight">Skills</span></h2>
+          <p>
+            Technologies and tools I master to create amazing digital
+            experiences
+          </p>
+        </div>
+
+        <div class="skills-categories">
+          <div class="category-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend Skills -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="images/HTMLicon.png" alt="HTML" class="skill-img" />
+              <div class="skill-level">95%</div>
+            </div>
+            <h3>HTML5</h3>
+            <p>Semantic markup, accessibility, and modern HTML features</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="images/cssicon.png" alt="CSS" class="skill-img" />
+              <div class="skill-level">90%</div>
+            </div>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, animations, and responsive design</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="images/JSiocn.png" alt="JavaScript" class="skill-img" />
+              <div class="skill-level">88%</div>
+            </div>
+            <h3>JavaScript</h3>
+            <p>ES6+, DOM manipulation, and modern JS features</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="images/TSicon.png" alt="TypeScript" class="skill-img" />
+              <div class="skill-level">85%</div>
+            </div>
+            <h3>TypeScript</h3>
+            <p>Typed superset of JavaScript for better development</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="images/Reacticon.png" alt="React" class="skill-img" />
+              <div class="skill-level">87%</div>
+            </div>
+            <h3>React</h3>
+            <p>Component-based architecture and state management</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 87%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <img src="images/Angular.jpg" alt="Angular" class="skill-img" />
+              <div class="skill-level">82%</div>
+            </div>
+            <h3>Angular</h3>
+            <p>TypeScript-based framework for web applications</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 82%"></div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <img src="images/C++icon.png" alt="C++" class="skill-img" />
+              <div class="skill-level">83%</div>
+            </div>
+            <h3>C++</h3>
+            <p>Object-oriented programming and system development</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 83%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <img src="images/Ccharpicon.png" alt="C#" class="skill-img" />
+              <div class="skill-level">85%</div>
+            </div>
+            <h3>C#</h3>
+            <p>.NET framework and application development</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <img
+                src="images/AspMvciconpng.png"
+                alt="ASP.NET Core"
+                class="skill-img"
+              />
+              <div class="skill-level">80%</div>
+            </div>
+            <h3>ASP.NET Core</h3>
+            <p>Web application framework</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <img src="images/java.png" alt="Java" class="skill-img" />
+              <div class="skill-level">78%</div>
+            </div>
+            <h3>Java</h3>
+            <p>Cross-platform application development</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 78%"></div>
+            </div>
+          </div>
+
+          <!-- Mobile Skills -->
+          <div class="skill-card" data-category="mobile">
+            <div class="skill-icon">
+              <img src="images/Flutter.jpg" alt="Flutter" class="skill-img" />
+              <div class="skill-level">75%</div>
+            </div>
+            <h3>Flutter</h3>
+            <p>Cross-platform mobile development</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="mobile">
+            <div class="skill-icon">
+              <img src="images/Dart.jpg" alt="Dart" class="skill-img" />
+              <div class="skill-level">72%</div>
+            </div>
+            <h3>Dart</h3>
+            <p>Client-optimized programming language</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 72%"></div>
+            </div>
+          </div>
+
+          <!-- Tools & Others -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">
+              <img src="images/IPAicon.png" alt="API" class="skill-img" />
+              <div class="skill-level">88%</div>
+            </div>
+            <h3>API</h3>
+            <p>RESTful services and integration</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">
+              <img src="images/AspMvciconpng.png" alt="MVC" class="skill-img" />
+              <div class="skill-level">84%</div>
+            </div>
+            <h3>MVC</h3>
+            <p>Model-View-Controller architecture</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 84%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">
+              <img src="images/DataBase.png" alt="Database" class="skill-img" />
+              <div class="skill-level">86%</div>
+            </div>
+            <h3>Database</h3>
+            <p>Database design and management</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 86%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">
+              <img
+                src="images/SystemAlicon.png"
+                alt="System Analysis"
+                class="skill-img"
+              />
+              <div class="skill-level">90%</div>
+            </div>
+            <h3>System Analysis</h3>
+            <p>Requirements gathering and analysis</p>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>My <span class="highlight">Projects</span></h2>
+          <p>Check out some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="images/22b5604eca105ae195aa809dc734d071.jpg"
+                alt="E-Commerce Project"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/ProgramerShaher/Shoping_Online"
+                  class="project-link"
+                >
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a
+                  href="https://github.com/ProgramerShaher/Shoping_Online"
+                  class="project-link"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-desc">
+                A complete online shopping platform with product catalog, secure
+                payments, and user management system.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">ASP.Net Core</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="images/e0bc5c6088549cc2a289ee66052b023f.jpg"
+                alt="News Website"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/ProgramerShaher/GlobalNewsNetwork"
+                  class="project-link"
+                >
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a
+                  href="https://github.com/ProgramerShaher/GlobalNewsNetwork"
+                  class="project-link"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Global News Website</h3>
+              <p class="project-desc">
+                A dynamic news portal with article management, categories, and
+                real-time content updates.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">ASP.Net Core MVC</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80"
+                alt="Sales Management System"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/ProgramerShaher/EcommercManagmentSales"
+                  class="project-link"
+                >
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a
+                  href="https://github.com/ProgramerShaher/EcommercManagmentSales"
+                  class="project-link"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Sales & Store Management System</h3>
+              <p class="project-desc">
+                A robust sales and store management tool (under development)
+                that helps businesses track inventory, manage invoices, analyze
+                sales performance, and monitor overall efficiency.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C#</span>
+                <span class="project-tag">Entity Framework</span>
+                <span class="project-tag">SQL Server</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/Shoping_online.jpg" alt="Online Shopping" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/ProgramerShaher/project_online_shopping_php"
+                  class="project-link"
+                >
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a
+                  href="https://github.com/ProgramerShaher/project_online_shopping_php"
+                  class="project-link"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Online Shopping Platform</h3>
+              <p class="project-desc">
+                An intuitive and secure online shopping platform that supports
+                seamless buying and selling processes with order delivery and
+                product reviews.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/School.png" alt="School Management System" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/ProgramerShaher/School_System/tree/main/System_School_Online"
+                  class="project-link"
+                >
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a
+                  href="https://github.com/ProgramerShaher/School_System/tree/main/System_School_Online"
+                  class="project-link"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">School Management System</h3>
+              <p class="project-desc">
+                We are developing a comprehensive school management system that
+                streamlines daily administrative tasks, including student,
+                teacher, attendance, and grade management.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/mocca.jpg" alt="Mocca Coffee Shop" />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/ProgramerShaher/WEB-ONLINESHOPING-MOCCA/tree/main/WEB-ONLINESHOP"
+                  class="project-link"
+                >
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a
+                  href="https://github.com/ProgramerShaher/WEB-ONLINESHOPING-MOCCA/tree/main/WEB-ONLINESHOP"
+                  class="project-link"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Mocca Coffee Web Shop</h3>
+              <p class="project-desc">
+                A full-featured e-commerce web platform designed for coffee
+                enthusiasts to browse, select, and purchase various coffee
+                products.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+          <p>Get in touch with me for collaborations or just to say hello</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-header">
+            <h3>Let's Talk!</h3>
+            <p>I'm always open to discussing new projects and opportunities</p>
+          </div>
+
+          <ul class="contact-details">
+            <!-- الموقع -->
+            <li>
+              <a
+                href="https://www.google.com/maps/place/%D9%85%D8%AF%D8%A7%D8%B1%D8%B3+%D9%88%D8%A7%D8%AD%D8%A9+%D8%A7%D9%84%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9+%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%D8%A9%E2%80%AD/@15.2324877,44.2509954,202m/data=!3m1!1e3!4m14!1m7!3m6!1s0x1603cfec1f195eb7:0x76ca74f8952570cc!2z2YXYr9in2LHYsyDZiNin2K3YqSDYp9mE2KXYqNiv2KfYuSDYp9mE2KPZh9mE2YrYqQ!8m2!3d15.2325639!4d44.2504691!16s%2Fg%2F11rrrkl13s!3m5!1s0x1603cfec1f195eb7:0x76ca74f8952570cc!8m2!3d15.2325639!4d44.2504691!16s%2Fg%2F11rrrkl13s?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Al-Yaman, Sanaa</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- البريد -->
+            <li>
+              <a
+                href="mailto:shaheralyaari@gmail.com?subject=Hello%20Shaher"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>shaheralyaari@gmail.com</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- الهاتف -->
+            <li>
+              <a
+                href="tel:+967779007753"
+                style="text-decoration: none; color: inherit"
+              >
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+967 779007753</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="social-links">
+            <a
+              href="http://x.com/ShaherAlyaari?t=Fe6QjlOHbgBoCBwtNoTD-w&=09"
+              class="social-link"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="http://facebook.com/Shaherkhald.aly.ry.2025?mibextid=rS40aB7S9Ucbxw6v"
+              class="social-link"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ProgramerShaher" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/967779007753" class="social-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h4>About</h4>
+            <p>
+              I'm a passionate developer and designer creating digital
+              experiences that make a difference.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-links">
+              <!-- قائمة البريد -->
+              <li
+                style="
+                  list-style: none;
+                  margin: 10px 0;
+                  font-family: Arial, sans-serif;
+                "
+              >
+                <a
+                  href="mailto:shaheralyaari@gmail.com?subject=Hello%20Shaher"
+                  style="
+                    text-decoration: none;
+                    color: #fefefe;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <!-- أيقونة البريد (يمكن استخدام أي أيقونة تفضلها) -->
+                  <img
+                    src="images/732200.png"
+                    alt="Email Icon"
+                    width="24"
+                    height="24"
+                  />
+
+                  <!-- النص -->
+                  <span>ShaherAlyaari@gmail.com</span>
+                </a>
+              </li>
+
+              <li><a href="tel:+967 779007753">779007753</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Shaher Alyaari. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
