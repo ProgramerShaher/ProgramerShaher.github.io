@@ -1,4 +1,4 @@
-/* ========================================
+﻿/* ========================================
    Portfolio Website - Enhanced Styles
    Fully Responsive Design
    ======================================== */
@@ -101,90 +101,7 @@ ul {
 /* ========================================
    4. Header & Navigation
    ======================================== */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    background: rgba(15, 15, 30, 0.85);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    z-index: 1000;
-    transition: var(--transition-fast);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-header.scrolled {
-    padding: 15px 0;
-    background: rgba(15, 15, 30, 0.95);
-    box-shadow: var(--shadow-md);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--neon-pink), var(--neon-blue), var(--neon-green));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -0.5px;
-}
-
-.nav-links {
-    display: flex;
-    gap: clamp(15px, 3vw, 30px);
-    align-items: center;
-}
-
-.nav-links a {
-    color: var(--text-secondary);
-    font-weight: 500;
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
-    position: relative;
-    padding: 8px 0;
-    transition: var(--transition-fast);
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--neon-pink), var(--neon-blue));
-    transition: var(--transition-fast);
-}
-
-.nav-links a:hover {
-    color: var(--neon-blue);
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.menu-btn {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--light-text);
-    background: none;
-    border: none;
-    padding: 8px;
-    transition: var(--transition-fast);
-}
-
-.menu-btn:hover {
-    color: var(--neon-blue);
-}
+/* Header removed - using sidebar */
 
 /* ========================================
    5. Hero Section
@@ -692,7 +609,7 @@ section {
 }
 
 /* ========================================
-   9. Projects Section
+   9. Projects Section (Professional Box Design)
    ======================================== */
 .projects {
     background: var(--card-bg);
@@ -705,32 +622,41 @@ section {
 }
 
 .project-card {
-    background: var(--dark-bg);
-    border-radius: var(--radius-md);
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+        /* Deep, rich gradient */
+        border-radius: 20px;
+        /* Modern rounded corners */
     overflow: hidden;
-    transition: var(--transition-smooth);
-    box-shadow: var(--shadow-sm);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.7);
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+        /* Subtle frame */
+        display: flex;
+        flex-direction: column;
 }
 
+/* Neon Top Border Accent */
 .project-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px;
+    height: 4px;
     background: linear-gradient(90deg, var(--neon-pink), var(--neon-blue));
     transform: scaleX(0);
     transform-origin: left;
-    transition: var(--transition-fast);
+    transition: transform 0.4s ease;
+        z-index: 2;
 }
 
+/* Hover Effects: Lift & Glow */
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(0, 204, 255, 0.3);
+    transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 40px -10px rgba(0, 204, 255, 0.2);
+        border-color: rgba(0, 204, 255, 0.4);
+        /* Neon border reveal */
 }
 
 .project-card:hover::before {
@@ -741,32 +667,36 @@ section {
     height: 220px;
     overflow: hidden;
     position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition-smooth);
+    transition: transform 0.6s ease;
 }
 
 .project-card:hover .project-img img {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(2deg);
+        /* Dynamic image movement */
 }
 
+/* Overlay with Gradient */
 .project-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, rgba(0, 204, 255, 0.9));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 204, 255, 0.4));
     opacity: 0;
-    transition: var(--transition-fast);
+    transition: opacity 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+        backdrop-filter: blur(3px);
 }
 
 .project-card:hover .project-overlay {
@@ -774,28 +704,29 @@ section {
 }
 
 .project-link {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+        height: 55px;
     border-radius: 50%;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     color: var(--neon-blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(20px);
-    transition: var(--transition-fast);
+    transform: translateY(30px) scale(0.8);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     opacity: 0;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        font-size: 1.2rem;
 }
 
 .project-link:hover {
     background: var(--neon-blue);
     color: white;
-    transform: translateY(0) scale(1.1);
+    transform: translateY(0) scale(1.1) !important;
 }
 
 .project-card:hover .project-link {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     opacity: 1;
 }
 
@@ -807,44 +738,67 @@ section {
     transition-delay: 0.2s;
 }
 
+/* Info Section */
 .project-info {
     padding: 25px;
+    flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .project-title {
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
     margin-bottom: 12px;
+    color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease;
+    }
+    
+    .project-card:hover .project-title {
     color: var(--neon-blue);
-    font-weight: 600;
 }
 
 .project-desc {
-    color: var(--text-secondary);
+    color: #b0b0cc;
+        /* Softer, readable text */
     margin-bottom: 20px;
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-size: 0.95rem;
     line-height: 1.7;
+    flex-grow: 1;
 }
 
+/* Tags as Pills */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: auto;
+        /* Push to bottom */
 }
 
 .project-tag {
-    background: rgba(0, 204, 255, 0.15);
-    color: var(--neon-blue);
+    background: rgba(0, 204, 255, 0.08);
+        /* Very subtle background */
+        color: #00ccff;
     padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border: 1px solid rgba(0, 204, 255, 0.3);
-    transition: var(--transition-fast);
+    border-radius: 50px;
+        /* Full pill shape */
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: 1px solid rgba(0, 204, 255, 0.25);
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-tag:hover {
-    background: rgba(0, 204, 255, 0.25);
+    background: var(--neon-blue);
+        color: white;
+        /* White text on hover */
+        border-color: var(--neon-blue);
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 204, 255, 0.3);
 }
 
 /* ========================================
