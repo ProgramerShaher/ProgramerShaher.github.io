@@ -611,36 +611,64 @@ section {
 /* ========================================
    9. Projects Section (Professional Box Design)
    ======================================== */
+/* ========================================
+   9. Projects Section (Professional Box Design)
+   ======================================== */
 .projects {
-    background: var(--card-bg);
+    background: var(--darker-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Decoration for Projects */
+.projects::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 204, 255, 0.05) 0%, transparent 70%);
+    z-index: 0;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 35px;
+    /* Mobile First: 1 column */
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
 }
 
-/* Force 3 columns on Desktop */
-@media (min-width: 1024px) {
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: Strictly 3 columns */
+@media (min-width: 1025px) {
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 .project-card {
-    background: linear-gradient(145deg, #1a1a2e, #16213e);
-        /* Deep, rich gradient */
-        border-radius: 20px;
-        /* Modern rounded corners */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-        /* Subtle frame */
-        display: flex;
-        flex-direction: column;
 }
 
 /* Neon Top Border Accent */
@@ -843,10 +871,55 @@ section {
 
 .contact-details {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact-details li {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.contact-details a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-details a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 204, 255, 0.3);
+    transform: translateX(10px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.2), rgba(0, 255, 153, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--neon-blue);
+    flex-shrink: 0;
+}
+
+.contact-text h4 {
+    font-size: 1rem;
+    color: var(--light-text);
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    word-break: break-all; /* Prevents overflow for long emails */
 }
 
 .contact-details li a {
