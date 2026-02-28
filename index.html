@@ -48,6 +48,15 @@
   <link rel="stylesheet" href="sidebar.css" />
   <link rel="stylesheet" href="profile-image.css" />
   <link rel="stylesheet" href="theme.css" />
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      // Initialize EmailJS with your Public Key
+      // You will need to replace 'YOUR_PUBLIC_KEY' with your actual key from EmailJS dashboard
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
   </head>
   
   <body>
@@ -161,7 +170,7 @@
             <a href="#contact" class="btn btn-secondary">
               <i class="fas fa-paper-plane"></i> تواصل معي
             </a>
-            <a href="cv/Shaher-CV-EN.pdf" class="btn btn-primary cv-btn" id="cvDownloadBtn" download>
+            <a href="cv/Shaher_AL-Yaari_CV.pdf" class="btn btn-primary cv-btn" id="cvDownloadBtn" download>
               <i class="fas fa-file-download"></i> <span>Download CV (EN)</span>
             </a>
           </div>
@@ -683,11 +692,7 @@
 
           <div class="contact-form-wrapper">
             <h4 class="contact-form-title">Send Me a Message</h4>
-            <form id="contactForm" class="contact-form" action="https://formsubmit.co/shaheralyaari@gmail.com" method="POST">
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value="New message from portfolio website" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://programershaher.github.io/?sent=1" />
+            <form id="contactForm" class="contact-form">
 
               <div class="form-grid">
                 <div class="form-group">

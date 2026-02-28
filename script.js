@@ -325,15 +325,48 @@
     // ========================================
     function initContactForm() {
         const contactForm = document.getElementById('contactForm');
+        const statusMessage = document.getElementById('formStatusMessage');
 
         if (!contactForm) return;
 
         contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
             const submitBtn = contactForm.querySelector('button[type="submit"]');
-            if (!submitBtn) return;
+            const btnText = submitBtn.querySelector('span');
+            const originalText = btnText.textContent;
+            
+            // Disable button
             submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.8';
-            submitBtn.style.cursor = 'not-allowed';
+            btnText.textContent = 'Sending...';
+            
+            // Prepare parameters for EmailJS
+            // These should match the variables in your EmailJS template
+            const templateParams = {
+                from_name: document.getElementById('fullName').value,
+                from_email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_email: 'shaheralyaari@gmail.com'
+            };
+
+            // Send via EmailJS
+            // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    statusMessage.textContent = 'Message sent successfully!';
+                    statusMessage.style.color = '#4CAF50';
+                    contactForm.reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    statusMessage.textContent = 'Failed to send message. Please try again.';
+                    statusMessage.style.color = '#f44336';
+                })
+                .finally(function() {
+                    submitBtn.disabled = false;
+                    btnText.textContent = originalText;
+                });
         });
     }
 
