@@ -352,7 +352,7 @@
 
             // Send via EmailJS
             // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            emailjs.send('service_v0zzrlm', 'template_lam9s0g', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     statusMessage.textContent = 'Message sent successfully!';
