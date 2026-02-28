@@ -347,7 +347,7 @@
                 from_email: document.getElementById('email').value,
                 subject: document.getElementById('subject').value,
                 message: document.getElementById('message').value,
-                to_email: 'shaheralyaari@gmail.com'
+                to_email: 'shahrkhaldalyryalyry@gmail.com'
             };
 
             // Send via EmailJS
