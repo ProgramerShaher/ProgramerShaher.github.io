@@ -254,6 +254,21 @@ body.light-mode .floating-element {
     opacity: 0.3;
 }
 
+body.light-mode .language-switcher {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+body.light-mode .language-label {
+    color: rgba(26, 26, 46, 0.8);
+}
+
+body.light-mode .language-select {
+    background: rgba(255, 255, 255, 0.92);
+    color: #1a1a2e;
+    border-color: rgba(33, 150, 243, 0.35);
+}
+
 /* Theme Toggle Icon Change */
 body.light-mode .theme-toggle i::before {
     content: "\f185"; /* fa-sun */

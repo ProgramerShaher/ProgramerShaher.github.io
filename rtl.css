@@ -106,6 +106,19 @@
     flex-direction: row-reverse;
 }
 
+[dir="rtl"] .contact-form-wrapper {
+    text-align: right;
+}
+
+[dir="rtl"] .form-label,
+[dir="rtl"] .form-input {
+    text-align: right;
+}
+
+[dir="rtl"] .language-label {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
 /* Footer RTL */
 [dir="rtl"] .footer-content {
     direction: rtl;

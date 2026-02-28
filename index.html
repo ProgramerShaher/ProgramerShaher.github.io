@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
   <!-- Essential Meta Tags -->
@@ -8,8 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary Meta Tags -->
-  <title>شاهر اليعري | مطور ويب وموبايل متكامل</title>
-  <meta name="title" content="شاهر اليعري | مطور ويب وموبايل متكامل" />
+  <title>شاهر اليعري | مطور ويب وموبايل شامل</title>
+  <meta name="title" content="شاهر اليعري | مطور ويب وموبايل شامل" />
   <meta name="description"
     content="Portfolio of Shaher AL-Yaari - Full-Stack Developer specializing in ASP.NET Core, Angular, React, and Mobile Development. View my projects and get in touch." />
   <meta name="keywords"
@@ -129,6 +129,15 @@
     <i class="fas fa-moon"></i>
   </button>
 
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <label for="languageSelect" class="language-label">Language</label>
+    <select id="languageSelect" class="language-select" aria-label="Select language">
+      <option value="en" selected>English</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+
   <!-- Sidebar Overlay (Mobile) -->
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
@@ -140,7 +149,7 @@
         <div class="hero-content">
           <!-- Profile image removed as requested -->
 
-          <h1>مطور ويب وتطبيقات موبايل متكامل</h1>
+          <h1> مطور ويب شامل وتطبيقات موبايل</h1>
           <p>
             أقوم ببناء تطبيقات ويب وموبايل احترافية تجمع بين الأداء العالي
             والتصميم العصري، باستخدام أحدث التقنيات.
@@ -151,6 +160,9 @@
             </a>
             <a href="#contact" class="btn btn-secondary">
               <i class="fas fa-paper-plane"></i> تواصل معي
+            </a>
+            <a href="cv/Shaher-CV-EN.pdf" class="btn btn-primary cv-btn" id="cvDownloadBtn" download>
+              <i class="fas fa-file-download"></i> <span>Download CV (EN)</span>
             </a>
           </div>
         </div>
@@ -175,7 +187,7 @@
             </div>
           </div>
           <div class="about-text">
-            <h3>طالب تقنية معلومات ومطور متكامل طموح</h3>
+            <h3>طالب تقنية معلومات ومطور ويب طموح</h3>
             <p>
               أنا طالب تقنية معلومات شغوف يبلغ من العمر 24 عامًا في سنتي الأخيرة بجامعة
               21 سبتمبر، ومن المقرر أن أتخرج هذا العام. قادتني رحلتي في مجال التكنولوجيا
@@ -487,6 +499,33 @@
               </div>
             </div>
           </div>
+            <div class="project-card">
+            <div class="project-img">
+              <img src="images/mocca.jpg" alt="Mocca Coffee Shop" />
+              <div class="project-overlay">
+                <a href="https://github.com/ProgramerShaher/WEB-ONLINESHOPING-MOCCA/tree/main/WEB-ONLINESHOP" class="project-link">
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a href="https://github.com/ProgramerShaher/WEB-ONLINESHOPING-MOCCA/tree/main/WEB-ONLINESHOP" class="project-link">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">نظام إدارة الموارد البشرية الذكي للمستشفيات (Smart Hospital HRMS)</h3>
+              <p class="project-desc">"نظام متكامل ومخصص لأتمتة عمليات الموارد البشرية في قطاع الرعاية الصحية. يهدف المشروع إلى تسهيل إدارة بيانات الموظفين (أطباء، ممرضين، إداريين)، تنظيم الورديات المعقدة، وتتبع الحضور والإجازات بكفاءة عالية. تم بناء النظام باستخدام أحدث تقنيات الويب لضمان أداء سريع، أمان عالي، وتجربة مستخدم سلسة."
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">ASP.NET Core 10</span>
+                <span class="project-tag">Web API</span>
+                <span class="project-tag">Angular 21</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">SQL Server</span>
+               <span class="project-tag">TalwindCss</span>
+                <span class="project-tag">PrimeNg</span>
+              </div>
+            </div>
+          </div>
           <!-- نظام إدارة الصيدلية الذكي -->
           <div class="project-card">
             <div class="project-img">
@@ -642,6 +681,43 @@
             </li>
           </ul>
 
+          <div class="contact-form-wrapper">
+            <h4 class="contact-form-title">Send Me a Message</h4>
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/shaheralyaari@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New message from portfolio website" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://programershaher.github.io/?sent=1" />
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input id="fullName" name="name" type="text" class="form-input" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" type="email" class="form-input" placeholder="Your email address" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input id="subject" name="subject" type="text" class="form-input" placeholder="Message subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Write your message..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+            <p class="form-note" id="formStatusMessage"></p>
+          </div>
+
           <div class="social-links">
             <a href="http://x.com/ShaherAlyaari?t=Fe6QjlOHbgBoCBwtNoTD-w&=09" class="social-link">
               <i class="fab fa-twitter"></i>
@@ -731,5 +807,6 @@
 <script src="theme.js"></script>
 <script src="sidebar.js"></script>
 <script src="script.js"></script>
+<script src="site-features.js"></script>
 
 </html>

@@ -329,20 +329,11 @@
         if (!contactForm) return;
 
         contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-
-            // Simulate form submission
-            console.log('Form submitted:', data);
-
-            // Show success message
-            alert('Thank you for your message! I will get back to you soon.');
-
-            // Reset form
-            contactForm.reset();
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            if (!submitBtn) return;
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.8';
+            submitBtn.style.cursor = 'not-allowed';
         });
     }
 
