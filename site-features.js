@@ -36,21 +36,35 @@
             filters: ['All', 'Frontend', 'Backend', 'Mobile', 'Tools'],
             projectsTitle: 'Featured <span class="highlight">Projects</span>',
             projectsSubtitle: 'A selection of my latest projects and solutions',
+            projectTags: [
+                ['ASP.NET Core 10', 'Web API', 'Angular 21', 'TypeScript', 'SQL Server', 'TailwindCSS', 'PrimeNg'],
+                ['ASP.NET Core 10', 'Web API', 'Angular 21', 'TypeScript', 'SQL Server', 'TailwindCSS', 'PrimeNg'],
+                ['PHP', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
+                ['ASP.NET Core', 'Web API', 'Angular', 'TypeScript', 'SQL Server'],
+                ['Flutter', 'Dart', 'Mobile Development', 'Cross-Platform'],
+                ['.NET MVC 8', 'Bootstrap', 'C#', 'SQL Server'],
+                ['.NET MVC', 'Bootstrap', 'C#', 'SQL Server'],
+                ['.NET API', 'Angular', 'TailwindCSS', 'PrimeNg', 'TypeScript']
+            ],
             projectTitles: [
-                'Mocca Coffee Online Store',
+                'Smart Hospital HR Management System',
                 'Smart Pharmacy Management System',
+                'Mocca Coffee Online Store',
+                'Law Office Management Web System',
                 'Law Office Management Mobile App',
-                'Law Office Management Web System',
-                'Law Office Management Web System',
-                'Smart Hospital HR Management System'
+                'Shopping Online E-Commerce Store',
+                'Global News Network',
+                'School Management System'
             ],
             projectDescriptions: [
-                'An online coffee store that provides product browsing, cart management, and a smooth purchase journey with a modern, responsive UI.',
-                'A complete pharmacy management system for medications, inventory tracking, sales, and reports to improve daily operations.',
-                'A cross-platform mobile application for managing legal cases, clients, schedules, and office workflow for law firms.',
-                'A web platform built with ASP.NET Core Web API and Angular to manage cases, clients, legal documents, sessions, and office finances.',
-                'A web platform built with ASP.NET Core Web API and Angular to manage cases, clients, legal documents, sessions, and office finances.',
-                'A complete HR system for hospitals to manage staff records, shifts, attendance, leave, and HR workflows with secure, modern architecture.'
+                'A comprehensive HR system for hospitals to manage staff records, shifts, attendance, leave, performance evaluation, and recruitment with secure, modern architecture built with ASP.NET Core 10, Angular 21, and SQL Server.',
+                'A complete pharmacy management system for medications, inventory tracking, sales, and reports to improve daily operations. Built with ASP.NET Core 10, Angular 21, TypeScript, and SQL Server.',
+                'An online coffee store that provides product browsing, cart management, and a smooth purchase journey with a modern, responsive UI. Built with PHP, HTML, CSS, JavaScript, and MySQL.',
+                'A web platform built with ASP.NET Core Web API and Angular to manage cases, clients, legal documents, sessions, and office finances with professional UI/UX.',
+                'A cross-platform mobile application for managing legal cases, clients, schedules, and office workflow for law firms. Built with Flutter and Dart.',
+                'A modern e-commerce online store built with .NET MVC 8 and Bootstrap. Features product management, shopping cart, and secure checkout process.',
+                'A dynamic news network website featuring breaking news, category sections, and multimedia content. Built with .NET MVC and Bootstrap technologies.',
+                'A comprehensive school management system for student records, teacher schedules, and academic reports. Built with .NET API, Angular, TailwindCSS, and PrimeNg.'
             ],
             contactTitle: 'Contact Me',
             contactSubtitle: 'Let\'s work together or just say hello',
@@ -66,7 +80,7 @@
             footerTitles: ['About This Site', 'Quick Links', 'Services', 'Contact'],
             footerAbout: 'I am a passionate developer and designer creating digital experiences that make a difference.',
             footerQuickLinks: ['Home', 'About', 'Skills', 'Projects', 'Contact'],
-            footerServices: ['Web Development', 'UI/UX Design', 'Mobile Apps', 'Consulting'],
+            footerServices: ['Web Development', 'Mobile Development', 'System Design', 'Consulting'],
             footerCopyright: '© 2025 Shaher AL-Yaari. All rights reserved.'
         },
         ar: {
@@ -97,21 +111,35 @@
             filters: ['الكل', 'الواجهة الأمامية', 'الخلفية', 'الموبايل', 'أدوات'],
             projectsTitle: 'مشاريعي <span class="highlight">المميزة</span>',
             projectsSubtitle: 'مجموعة من أحدث الأعمال والحلول التي أنجزتها',
+            projectTags: [
+                ['ASP.NET Core 10', 'Web API', 'Angular 21', 'TypeScript', 'SQL Server', 'TailwindCSS', 'PrimeNg'],
+                ['ASP.NET Core 10', 'Web API', 'Angular 21', 'TypeScript', 'SQL Server', 'TailwindCSS', 'PrimeNg'],
+                ['PHP', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
+                ['ASP.NET Core', 'Web API', 'Angular', 'TypeScript', 'SQL Server'],
+                ['Flutter', 'Dart', 'تطوير الموبايل', 'متعدد المنصات'],
+                ['.NET MVC 8', 'Bootstrap', 'C#', 'SQL Server'],
+                ['.NET MVC', 'Bootstrap', 'C#', 'SQL Server'],
+                ['.NET API', 'Angular', 'TailwindCSS', 'PrimeNg', 'TypeScript']
+            ],
             projectTitles: [
-                'متجر موكا للقهوة عبر الإنترنت',
+                'نظام إدارة الموارد البشرية الذكي للمستشفيات',
                 'نظام إدارة الصيدلية الذكي',
+                'متجر موكا للقهوة عبر الإنترنت',
+                'نظام ويب لإدارة مكاتب المحاماة',
                 'تطبيق موبايل لإدارة مكاتب المحاماة',
-                'نظام ويب لإدارة مكاتب المحاماة',
-                'نظام ويب لإدارة مكاتب المحاماة',
-                'نظام إدارة الموارد البشرية الذكي للمستشفيات'
+                'متجر التسوق الإلكتروني',
+                'شبكة الأخبار العالمية',
+                'نظام إدارة المدارس'
             ],
             projectDescriptions: [
-                'متجر إلكتروني للقهوة يوفر عرض المنتجات، إدارة السلة، وتجربة شراء سلسة بواجهة حديثة ومتجاوبة.',
-                'نظام متكامل لإدارة الصيدلية يشمل الأدوية، المخزون، المبيعات، والتقارير لتحسين كفاءة العمل اليومي.',
-                'تطبيق موبايل متعدد المنصات لإدارة القضايا والعملاء والمواعيد وسير العمل داخل مكاتب المحاماة.',
-                'منصة ويب مبنية بـ ASP.NET Core Web API و Angular لإدارة القضايا والعملاء والمستندات والجلسات والجانب المالي للمكتب.',
-                'منصة ويب مبنية بـ ASP.NET Core Web API و Angular لإدارة القضايا والعملاء والمستندات والجلسات والجانب المالي للمكتب.',
-                'نظام متكامل لأتمتة عمليات الموارد البشرية في المستشفيات وإدارة الموظفين والورديات والحضور والإجازات بكفاءة عالية.'
+                'نظام متكامل لأتمتة عمليات الموارد البشرية في المستشفيات وإدارة الموظفين والورديات والحضور والإجازات وتقييم الأداء والتوظيف بكفاءة عالية. مبني بـ ASP.NET Core 10 و Angular 21 و SQL Server.',
+                'نظام متكامل لإدارة الصيدلية يشمل الأدوية والمخزون والمبيعات والتقارير لتحسين كفاءة العمل اليومي. مبني بـ ASP.NET Core 10 و Angular 21 و TypeScript و SQL Server.',
+                'متجر إلكتروني للقهوة يوفر عرض المنتجات وإدارة السلة وتجربة شراء سلسة بواجهة حديثة ومتجاوبة. مبني بـ PHP و HTML و CSS و JavaScript و MySQL.',
+                'منصة ويب متطورة مبنية بـ ASP.NET Core Web API و Angular لإدارة احترافية لمكاتب المحاماة مع إدارة القضايا والعملاء والمستندات والجلسات والجانب المالي.',
+                'تطبيق موبايل احترافي مبني بـ Flutter لإدارة شاملة لمكاتب المحاماة مع متابعة القضايا والعملاء والمواعيد والجلسات والوثائق القانونية.',
+                'متجر تسوق إلكتروني حديث مبني بـ .NET MVC 8 و Bootstrap يوفر إدارة المنتجات وسلة التسوق والدفع الآمن.',
+                'موقع شبكة أخبار ديناميكي يعرض الأخبار العاجلة والأقسام المختلفة والمحتوى المتعدد الوسائط. مبني بـ .NET MVC و Bootstrap.',
+                'نظام شامل لإدارة المدارس يتضمن سجلات الطلاب وجداول المعلمين والتقارير الأكاديمية. مبني بـ .NET API و Angular و TailwindCSS و PrimeNg.'
             ],
             contactTitle: 'تواصل معي',
             contactSubtitle: 'تواصل معي للتعاون أو لمجرد السلام',
@@ -127,7 +155,7 @@
             footerTitles: ['عن الموقع', 'روابط سريعة', 'الخدمات', 'تواصل'],
             footerAbout: 'أنا مطور ومصمم شغوف أقوم بإنشاء تجارب رقمية تحدث فرقًا.',
             footerQuickLinks: ['الرئيسية', 'نبذة عني', 'المهارات', 'المشاريع', 'تواصل معي'],
-            footerServices: ['تطوير الويب', 'تصميم UI/UX', 'تطبيقات الموبايل', 'الاستشارات'],
+            footerServices: ['تطوير الويب', 'تطوير الموبايل', 'تصميم الأنظمة', 'الاستشارات'],
             footerCopyright: '© 2025 شاهر اليعري. جميع الحقوق محفوظة.'
         }
     };
@@ -167,12 +195,20 @@
         const titleTag = document.querySelector('meta[name="title"]');
         if (titleTag) titleTag.setAttribute('content', t.pageTitle);
 
-        selectText('.profile-title', t.profileTitle);
-        setNodeList('.sidebar-menu .menu-link span', t.menu);
-        selectText('.hero h1', t.heroTitle);
-        selectText('.hero p', t.heroDescription);
-        setButtonWithIcon('.hero-btns a:nth-child(1)', 'fas fa-rocket', t.heroButtons[0]);
-        setButtonWithIcon('.hero-btns a:nth-child(2)', 'fas fa-paper-plane', t.heroButtons[1]);
+        const profileTitle = document.querySelector('.profile-title');
+        if (profileTitle) profileTitle.textContent = t.profileTitle;
+        const menuItems = document.querySelectorAll('.sidebar-menu .menu-link span');
+        menuItems.forEach((el, i) => {
+            if (t.menu[i]) el.textContent = t.menu[i];
+        });
+        const heroTitle = document.querySelector('.hero h1');
+        const heroDesc = document.querySelector('.hero p');
+        if (heroTitle) heroTitle.textContent = t.heroTitle;
+        if (heroDesc) heroDesc.textContent = t.heroDescription;
+        const heroBtn1 = document.querySelector('.hero-btns a:nth-child(1)');
+        const heroBtn2 = document.querySelector('.hero-btns a:nth-child(2)');
+        if (heroBtn1) heroBtn1.innerHTML = '<i class="fas fa-rocket"></i> ' + t.heroButtons[0];
+        if (heroBtn2) heroBtn2.innerHTML = '<i class="fas fa-paper-plane"></i> ' + t.heroButtons[1];
 
         const cvBtn = document.getElementById('cvDownloadBtn');
         if (cvBtn) {
@@ -185,37 +221,58 @@
             }
         }
 
-        selectHTML('#about .section-title h2', t.aboutTitle);
+        const aboutTitleEl = document.querySelector('#about .section-title h2');
+        if (aboutTitleEl) aboutTitleEl.innerHTML = t.aboutTitle;
         selectText('#about .section-title p', t.aboutSubtitle);
         selectText('#about .about-text h3', t.aboutHeading);
-        setNodeList('#about .about-text > p', t.aboutParagraphs);
+        const aboutParagraphs = document.querySelectorAll('#about .about-text > p');
+        aboutParagraphs.forEach((el, i) => {
+            if (t.aboutParagraphs && t.aboutParagraphs[i]) el.textContent = t.aboutParagraphs[i];
+        });
         const infoItems = document.querySelectorAll('#about .info-item');
         infoItems.forEach((item, index) => {
             const heading = item.querySelector('.info-content h4');
             const paragraph = item.querySelector('.info-content p');
-            if (t.aboutInfo[index]) {
+            if (t.aboutInfo && t.aboutInfo[index]) {
                 if (heading) heading.textContent = t.aboutInfo[index][0];
                 if (paragraph) paragraph.textContent = t.aboutInfo[index][1];
             }
         });
 
-        selectHTML('#skills .section-title h2', t.skillsTitle);
+        const skillsTitleEl = document.querySelector('#skills .section-title h2');
+        if (skillsTitleEl) skillsTitleEl.innerHTML = t.skillsTitle;
         selectText('#skills .section-title p', t.skillsSubtitle);
-        setNodeList('#skills .filter-btn', t.filters);
+        const filterBtns = document.querySelectorAll('#skills .filter-btn');
+        filterBtns.forEach((el, i) => {
+            if (t.filters[i]) el.textContent = t.filters[i];
+        });
 
-        selectHTML('#projects .section-title h2', t.projectsTitle);
+        const projectsTitleEl = document.querySelector('#projects .section-title h2');
+        if (projectsTitleEl) projectsTitleEl.innerHTML = t.projectsTitle;
         selectText('#projects .section-title p', t.projectsSubtitle);
-        setNodeList('.project-title', t.projectTitles);
-        setNodeList('.project-desc', t.projectDescriptions);
+        const projectTitles = document.querySelectorAll('.project-title');
+        const projectDescs = document.querySelectorAll('.project-desc');
+        projectTitles.forEach((el, i) => {
+            if (t.projectTitles[i]) el.textContent = t.projectTitles[i];
+        });
+        projectDescs.forEach((el, i) => {
+            if (t.projectDescriptions[i]) el.textContent = t.projectDescriptions[i];
+        });
 
         selectText('#contact .section-title h2', t.contactTitle);
         selectText('#contact .section-title p', t.contactSubtitle);
         selectText('#contact .contact-header h3', t.contactHeader);
         selectText('#contact .contact-header p', t.contactHeaderText);
-        setNodeList('#contact .contact-text h4', t.contactDetails);
+        const contactDetails = document.querySelectorAll('#contact .contact-text h4');
+        contactDetails.forEach((el, i) => {
+            if (t.contactDetails && t.contactDetails[i]) el.textContent = t.contactDetails[i];
+        });
 
         selectText('.contact-form-title', t.formTitle);
-        setNodeList('.form-label', t.formLabels);
+        const formLabels = document.querySelectorAll('.form-label');
+        formLabels.forEach((el, i) => {
+            if (t.formLabels[i]) el.textContent = t.formLabels[i];
+        });
         const placeholders = document.querySelectorAll('.contact-form .form-input');
         placeholders.forEach((input, index) => {
             if (t.formPlaceholders[index] !== undefined) {
@@ -227,14 +284,20 @@
 
         const footerColumns = document.querySelectorAll('.footer-col h4');
         footerColumns.forEach((heading, index) => {
-            if (t.footerTitles[index] !== undefined) {
+            if (t.footerTitles[index]) {
                 heading.textContent = t.footerTitles[index];
             }
         });
-        const footerAbout = document.querySelector('.footer-col p');
+        const footerAbout = document.querySelector('.footer-col:first-child p');
         if (footerAbout) footerAbout.textContent = t.footerAbout;
-        setNodeList('.footer-col:nth-child(2) .footer-links a', t.footerQuickLinks);
-        setNodeList('.footer-col:nth-child(3) .footer-links a', t.footerServices);
+        const footerQuickLinks = document.querySelectorAll('.footer-col:nth-child(2) .footer-links a');
+        const footerServices = document.querySelectorAll('.footer-col:nth-child(3) .footer-links a');
+        footerQuickLinks.forEach((el, i) => {
+            if (t.footerQuickLinks[i]) el.textContent = t.footerQuickLinks[i];
+        });
+        footerServices.forEach((el, i) => {
+            if (t.footerServices[i]) el.textContent = t.footerServices[i];
+        });
         selectText('.footer-bottom p', t.footerCopyright);
 
         localStorage.setItem(LANG_KEY, lang);
